@@ -60,3 +60,6 @@ We follow certain guidelines in order to maintain this repository.Please find ou
 
 ## License
 Distributed under the MIT License.See `LICENSE` for more information.
+
+## Badges
+[![@prashant_sahu's Holopin board](https://holopin.io/api/user/board?user=prashant_sahu)](https://holopin.io/@prashant_sahu)
