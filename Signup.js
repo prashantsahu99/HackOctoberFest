@@ -4,13 +4,12 @@ import * as yup from "yup";
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 function Signup() {
-    const navigate = useNavigate();
-
-    const [flag, setFlag] = useState(false);
+     const [flag, setFlag] = useState(false);
 
     const [login, setLogin] = useState(true);
+    const navigate = useNavigate();
 
-
+   
     const [isAlreadyExist, setIsAlreadyExist] = useState(false);
     const initialValues = {
         email: "",
@@ -18,6 +17,7 @@ function Signup() {
         name: "",
     };
     const onSubmit = (values) => {
+        alert(values);
     };
 
     const validationSchema = yup.object({
@@ -69,13 +69,11 @@ function Signup() {
                 else {
                     oldArr.push(ob)
                     localStorage.setItem("formdata", JSON.stringify(oldArr))
-                    console.log(oldArr, 'hhg')
                     navigate("/login")
 
                 }
             }
         }
-        console.log(isAlreadyExist);
     }
 
     return (
